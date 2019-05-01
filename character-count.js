@@ -9,7 +9,7 @@ function countLetters(string)
 
   for (const char of string)
   {
-    if (char !== " ") continue;
+    if (char === " ") continue;
 
     if (!result[char])
     {
@@ -17,7 +17,7 @@ function countLetters(string)
     }
     else
     {
-      result[char] = result[char] + 1;
+      result[char]++;
     }
   }
 
